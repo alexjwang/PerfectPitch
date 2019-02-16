@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: WARN
+    org.springframework.web: WARN
+    com.duckhacks: DEBUG
+
+server:
+  port: 8080

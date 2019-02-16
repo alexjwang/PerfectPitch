@@ -15,7 +15,7 @@
                 <input type = "text" name="name" required><br>
                 <div class="form-group">
                     <label for="description">Project Description:*</label>
-                    <textarea class="form-control" name="description" id="description" rows="6">Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them</textarea>
+                    <textarea class="form-control" name="description" id="description" rows="6" placeholder="Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them"></textarea>
                 </div>
                 <label for="dept" class="required">Department(s)*:</label><br>
                 <select name="dept" size="5" multiple required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
@@ -29,25 +29,24 @@
                 </select><br><br>
                 <label for="cost">Expected Cost:</label>
                 <input type="number" name="cost" ><br>
-                <label for="timeline">Timeline:</label>
+                <label for="timeline">Expected Timeline:</label>
                 <div class="form-group"class="timeline">
                     <label for="start">Start Date:</label>
-                    <input type="week" name="start"><br>
+                    <input type="date" name="start"><br>
                     <label for="end">End Date:</label>
-                    <input type="week" name="end"><br>
+                    <input type="date" name="end"><br>
                 </div>
                 <label for="value">Value Added:</label>
-                <textarea class="form-control" name="value" id="valueAdded" rows="3">Include a few brief sentences quantifying how this project will add value to your company</textarea><br>
+                <textarea class="form-control" name="value" id="valueAdded" placeholder="Include a few brief sentences quantifying how this project will add value to your company" rows="3"></textarea><br>
                 <label for="headPicture">Include Photo:</label>
                 <input type="file" name = "headPicture" accept="image/*">
                 <label for="data">Relevant Data Visualization:</label>
                 <input type="file" name = "data" accept="image/*">
-                <br><input type="submit"> <!--Python script for MongoDB-->
+                <br><input type="submit"> <!--TODO: Add onclick submit-->
             </form>
             <br>
-            <p>Legal Disclaimer</p>
+            <p>When you submit this project, it will go public for all users to view and vote on.</p>
         </div>
-
     </body>
 </html>
 

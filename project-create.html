@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Create New Project</h1>
+        </div>
+        <div class="container">
+            <form action=""><!--Python script for MongoDB-->
+                <label for="name" class="required">Project Name*:</label>
+                <input type = "text" name="name" required><br>
+                <div class="form-group">
+                    <label for="description">Project Description:*</label>
+                    <textarea class="form-control" name="description" id="description" rows="6">Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them</textarea>
+                </div>
+                <label for="dept" class="required">Department(s)*:</label><br>
+                <select name="dept" size="5" multiple required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
+                    <option value="marketing">Accounting</option>
+                    <option value="marketing">Customer Services</option>
+                    <option value="marketing">Design</option>
+                    <option value="marketing">Human Resources</option>
+                    <option value="marketing">Information Technology</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="marketing">Recruiting</option>
+                </select><br><br>
+                <label for="cost">Expected Cost:</label>
+                <input type="number" name="cost" ><br>
+                <label for="timeline">Timeline:</label>
+                <div class="form-group"class="timeline">
+                    <label for="start">Start Date:</label>
+                    <input type="week" name="start"><br>
+                    <label for="end">End Date:</label>
+                    <input type="week" name="end"><br>
+                </div>
+                <label for="value">Value Added:</label>
+                <textarea class="form-control" name="value" id="valueAdded" rows="3">Include a few brief sentences quantifying how this project will add value to your company</textarea><br>
+                <label for="headPicture">Include Photo:</label>
+                <input type="file" name = "headPicture" accept="image/*">
+                <label for="data">Relevant Data Visualization:</label>
+                <input type="file" name = "data" accept="image/*">
+                <br><input type="submit"> <!--Python script for MongoDB-->
+            </form>
+            <br>
+            <p>Legal Disclaimer</p>
+        </div>
+
+    </body>
+</html>
+

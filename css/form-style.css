@@ -1,3 +1,6 @@
+#top{
+    margin-top: 20px;
+}
 h1 {
     color: #59abe3;
 } 
@@ -13,6 +16,9 @@ label{
 button{
     color: #59abe3;
     border-color: #59abe3;
+}
+.form-control{
+    margin-left: 0px;
 }
 input{
     margin:10px;

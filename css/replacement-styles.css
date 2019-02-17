@@ -5,9 +5,12 @@
     margin-left: 5px;
     margin-right: 5px;
 }
-.project-display h3{
+.project-display h3 a{
     font-family: sans-serif;
     color: #59abe3;
+}
+.project-display h3 a:hover{
+    text-decoration: underline;
 }
 .project-display p{
     font-family: sans-serif;
@@ -17,6 +20,26 @@
     font-size: small;
     color: #e36759;
 }
+
+#project-title h2{
+    padding-top:25px;
+    color: #59abe3;
+}
+#attributes{
+    background-color:#59abe3;
+    border-right: 1px solid #59abe3;
+    color:white;
+    padding-top: 10px;
+    padding-bottom:100px;
+    margin-right:0px;
+}
+#attributes span{
+    font-weight: bold;
+}
+#project-description{
+    padding-top:10px;
+    margin-left: 0px;
+}
 /* Style the header */
 .header {
   padding: 10px 16px;
@@ -25,6 +48,13 @@
   text-align: left;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
 /* Page content */
 .content {
   padding: 16px;

@@ -3,6 +3,9 @@
 }
 h1 {
     color: #59abe3;
+    padding-top:20px; 
+    padding-bottom:5px;
+    border-bottom:1px solid lightgray;
 } 
 p{
     color: #59abe3;  

@@ -3259,7 +3259,12 @@ img {
     height: 2px;
     top: 3px;
   }
-
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   #aa-promo-banner .aa-promo-banner-area h3 {
     font-size: 25px;
   }

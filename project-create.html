@@ -1,52 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <h1>Create New Project</h1>
-        </div>
-        <div class="container">
-            <form action=""><!--Python script for MongoDB-->
-                <label for="name" class="required">Project Name*:</label>
-                <input type = "text" name="name" required><br>
-                <div class="form-group">
-                    <label for="description">Project Description:*</label>
-                    <textarea class="form-control" name="description" id="description" rows="6" placeholder="Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them"></textarea>
-                </div>
-                <label for="dept" class="required">Department(s)*:</label><br>
-                <select name="dept" size="5" multiple required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
-                    <option value="marketing">Accounting</option>
-                    <option value="marketing">Customer Services</option>
-                    <option value="marketing">Design</option>
-                    <option value="marketing">Human Resources</option>
-                    <option value="marketing">Information Technology</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="marketing">Recruiting</option>
-                </select><br><br>
-                <label for="cost">Expected Cost:</label>
-                <input type="number" name="cost" ><br>
-                <label for="timeline">Expected Timeline:</label>
-                <div class="form-group"class="timeline">
-                    <label for="start">Start Date:</label>
-                    <input type="date" name="start"><br>
-                    <label for="end">End Date:</label>
-                    <input type="date" name="end"><br>
-                </div>
-                <label for="value">Value Added:</label>
-                <textarea class="form-control" name="value" id="valueAdded" placeholder="Include a few brief sentences quantifying how this project will add value to your company" rows="3"></textarea><br>
-                <label for="headPicture">Include Photo:</label>
-                <input type="file" name = "headPicture" accept="image/*">
-                <label for="data">Relevant Data Visualization:</label>
-                <input type="file" name = "data" accept="image/*">
-                <br><input type="submit"> <!--TODO: Add onclick submit-->
-            </form>
-            <br>
-            <p>When you submit this project, it will go public for all users to view and vote on.</p>
-        </div>
-    </body>
-</html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Pitch Perfect | Home</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+    <!-- Extra Styles -->
+    <link rel = "stylesheet" href="css/form-style.css" >     
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body class="aa-price-range">  
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="aa-header">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-left">
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> Info.PerfectPitch@gmail.com
+                  </div>
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right">
+                  <a href="register.html" class="aa-register">Settings</a>
+                  <a href="signin.html" class="aa-login">Account Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+
+  <!-- Start menu section -->
+  <section id="aa-menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+          <!-- Text based logo -->
+           <a class="navbar-brand aa-logo" href="index.html"> Perfect <span>Pitch</span></a>
+           <!-- Image based logo -->
+           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+            <li class="active"><a href="index.html">Company HOME</a></li>                          
+        </div><!--/.nav-collapse -->       
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+  <!-- Start slider  -->
+    <div class="container-fluid" style="width:100%; padding: 0px; margin:0px;"> 
+      <!-- Top slider -->
+        <!-- Top slider single slide -->
+        <div class="aa-top-slider-single">
+          <img src="img/Header.png" alt="img" style="width:100%; height:auto;">
+        </div>
+      <!-- </div> -->
+    </div>
+  <!-- End slider  -->
+
+  <!--Input Project Form-->
+    <div class="container">
+        <form action=""><!--Python script for MongoDB-->
+            <label for="name" class="required">Project Name*:</label>
+            <input type = "text" name="name" required><br>
+            <div class="form-group">
+                <label for="description" class="required">Project Description:*</label>
+                <textarea class="form-control" name="description" id="description" rows="6" placeholder="Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them"></textarea>
+            </div>
+            <label for="dept" class="required">Department(s)*:</label><br>
+            <select name="dept" size="5" multiple required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
+                <option value="marketing">Accounting</option>
+                <option value="marketing">Customer Services</option>
+                <option value="marketing">Design</option>
+                <option value="marketing">Human Resources</option>
+                <option value="marketing">Information Technology</option>
+                <option value="marketing">Marketing</option>
+                <option value="marketing">Recruiting</option>
+            </select><br><br>
+            <label for="dept-cust">Custom Categories (separate by commas):</label>
+            <input type ="text" name="dept-cust"><br>
+            <label for="cost">Expected Cost:</label>
+            <input type="number" name="cost" ><br>
+            <label for="timeline">Expected Timeline:</label>
+            <div class="form-group"class="timeline" class="">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                            <label for="start">Start Date:</label>
+                            <input type="date" name="start"><br>
+                            <label for="end">End Date:</label>
+                            <input type="date" name="end"><br>
+                    </div>
+                </div>
+
+            </div>
+            <label for="value">Value Added:</label>
+            <textarea class="form-control" name="value" id="valueAdded" placeholder="Include a few brief sentences quantifying how this project will add value to your company" rows="3"></textarea><br>
+            <label for="headPicture">Include Photo:</label>
+            <input type="file" class="file-input" name = "headPicture" accept="image/*">
+            <label for="data">Relevant Data Visualization:</label>
+            <input type="file" class="file-input" name = "data" accept="image/*">
+            <br><input type="submit" class="submit"> <!--TODO: Add onclick submit-->
+        </form>
+        <br>
+        <p>When you submit this project, it will go public for all users to view and vote on.</p>
+    </div>
+
+  <!-- Footer -->
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="aa-footer-area">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-left">
+               <p>Pitch Perfect,  116th and Broadway</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="aa-footer-right">
+                <a href="index.html">Home</a>
+                <a href="index.html">Support</a>
+                <a href="index.html">License</a>
+                <a href="index.html">FAQ</a>
+                <a href="index.html">Privacy & Term</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+ 
+  
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>   
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+   <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+
+  </body>
+</html>

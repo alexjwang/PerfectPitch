@@ -7,7 +7,6 @@ xmlhttp.onreadystatechange = function() {
         var proj = element.name;
         var dept = element.dept;
         var votes = element.votes;
-        var isrc = 'img/item/'+dept+'.jpg';
         var stuff = "<div class='row'><div class='col-md-4'><article class='aa-properties-item'>"  
                   + "<div class='aa-tag for-sale'> "
                   + votes 

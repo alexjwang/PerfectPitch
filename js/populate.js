@@ -6,6 +6,7 @@ xmlhttp.onreadystatechange = function() {
     var stuff = ""
     for(i = 0; i < myArr.length; i++) {
         var element = myArr[i];
+        var id = element.id;
         var proj = element.name;
         var dept = element.dept;
         var votes = element.votes;

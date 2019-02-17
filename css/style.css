@@ -216,14 +216,14 @@ img {
   border: 2px solid #fff;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 80px;
   padding: 15px;
   line-height: 13px;
 }
 #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
   border: none;
   height: 50px;
-  width: 235px;
+  width: 30px;
 }
 #aa-menu-area .main-navbar .navbar-header .aa-logo-img img {
   width: 100%;
@@ -2754,8 +2754,8 @@ img {
 }
 @media (max-width: 991px) {
   #aa-menu-area .main-navbar .navbar-nav li a {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: .1px;
+    padding-right: 20px;
   }
 
   #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search {
@@ -2870,13 +2870,16 @@ img {
   }
 
   #aa-menu-area .main-navbar .navbar-header .aa-logo {
-    font-size: 18px;
+    font-size: 40px;
     height: 40px;
     margin-left: 10px;
     margin-top: 3px;
     padding: 10px;
   }
-
+  div.idkbruv{
+    font-size: 400px;
+    font-weight: bold;
+  }
   #aa-menu-area .main-navbar .navbar-header .aa-logo-img img {
     margin-left: 15px;
   }
@@ -2989,7 +2992,7 @@ img {
 
   #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
     height: 45px;
-    width: 200px;
+    width: 30px;
   }
 
   #aa-contact .aa-contact-area .aa-contact-top .aa-contact-top-left {
@@ -3125,7 +3128,7 @@ img {
   #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
     height: 35px;
     margin-top: 5px;
-    width: 150px;
+    width: 30px;
   }
 
   #aa-properties .aa-properties-content .aa-properties-content-body .aa-list-view li .aa-properties-item .aa-properties-item-img {
@@ -3238,7 +3241,12 @@ img {
     font-size: 25px;
   }
   .aa-title p {
-    font-size: 14px;
+    font-size: 60px;
+
+  }
+  .aa-title x {
+    font-size: 60px;
+
   }
   .aa-title span {
     height: 10px;
@@ -3251,7 +3259,12 @@ img {
     height: 2px;
     top: 3px;
   }
-
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
   #aa-promo-banner .aa-promo-banner-area h3 {
     font-size: 25px;
   }
@@ -3448,13 +3461,13 @@ img {
 
   #aa-header .aa-header-area .aa-header-right .aa-register {
     font-size: 14px;
-    margin-right=0px;
-   font color: white;
+    margin-right: 0px;
+    color: white;
   }
 
   #aa-header .aa-header-area .aa-header-right .aa-login {
     font-size: 14px;
-    font color: white;
+    color: white;
   }
 
   #aa-properties .aa-properties-content .aa-properties-content-head {

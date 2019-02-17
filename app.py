@@ -64,8 +64,11 @@ def post_pitch():
 
     cur = mysql.get_db().cursor()
     cur.execute(sql_string)
+    
+    mysql.get_db().commit()
 
     print('end post')
+    return 'hi'
 
 
 

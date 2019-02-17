@@ -9,8 +9,8 @@ app = Flask(__name__,
 mysql = MySQL()
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '48650Pizz!'
-app.config['MYSQL_DATABASE_DB'] = 'duckhacks'
+app.config['MYSQL_DATABASE_PASSWORD'] = ''
+app.config['MYSQL_DATABASE_DB'] = 'duckhacks2019'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql.init_app(app)
@@ -51,8 +51,27 @@ def get_ids():
 @app.route('/get/pitchFromID', methods=['GET'])
 def get_pitch():
     pitch_id = request.args['id']
-    sql_string = 'SELECT * FROM pitches WHERE `id`=' + pitch_id
+    sql_string = 'SELECT * FROM pitches WHERE `id`={}'.format(pitch_id)
     return to_json(sql_string)
+
+
+# increment vote counter from ID
+@app.route('/get/addVoteFromID', methods=['GET'])
+def add_vote():
+
+    pitch_id = request.args['id']
+
+    sql_string_select = 'SELECT votes FROM pitches WHERE `id`={}'.format(pitch_id)
+    selected = json.loads(to_json(sql_string_select))
+    new_num_votes = int(selected[0]['votes']) + 1;
+
+    sql_string_update = 'UPDATE pitches SET `votes`={} WHERE `id`={} '.format(new_num_votes, pitch_id)
+
+    cur = mysql.get_db().cursor()  # cursor
+    cur.execute(sql_string_update)
+    mysql.get_db().commit()
+
+    return 'done'
 
 
 # puts a new pitch into the database from post

@@ -1,0 +1,36 @@
+h1 {
+    color: #59abe3;
+} 
+p{
+    color: #59abe3;  
+}
+label{
+    color: #59abe3;  
+}
+.required{
+    color: #e36759;
+}
+button{
+    color: #59abe3;
+    border-color: #59abe3;
+}
+input{
+    margin:10px;
+    margin-right:none;
+}
+.submit{
+    width: 100px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #59abe3;
+    color:#fff;
+    border-color: #59abe3;
+    box-shadow: none;
+    border-style: none;
+    border-radius: 0%; 
+}
+.file-input button{
+    background-color: #59abe3;
+    color:#fff;
+    border-radius: 0%;
+}

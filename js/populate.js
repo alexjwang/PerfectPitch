@@ -14,11 +14,11 @@ xmlhttp.onreadystatechange = function() {
                   + proj
                   + "</a></h3><p>"
                   + desc
-                  + "</div> <div class = 'container-right'> <h3> </h3> <p>Upvotes: " 
+                  + "</div> <div class = 'container-right'> <br> <span style='font-size:x-large;'> " 
                   + votes 
-                  + "</p> <form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='width: 40px' type='submit' name='id' value="
+                  + "</span> <form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:lightgreen;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
                   + pitchid
-                  + ">^</button> </form></div> </div> </div>";
+                  + ">+</button> </form></div> </div> </div>";
         
     }; 
   document.getElementById("content-box").innerHTML = stuff;

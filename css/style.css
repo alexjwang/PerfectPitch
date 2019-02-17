@@ -223,7 +223,7 @@ img {
 #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
   border: none;
   height: 50px;
-  width: 235px;
+  width: 30px;
 }
 #aa-menu-area .main-navbar .navbar-header .aa-logo-img img {
   width: 100%;
@@ -2754,8 +2754,8 @@ img {
 }
 @media (max-width: 991px) {
   #aa-menu-area .main-navbar .navbar-nav li a {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: .1px;
+    padding-right: 20px;
   }
 
   #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search {
@@ -2992,7 +2992,7 @@ img {
 
   #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
     height: 45px;
-    width: 200px;
+    width: 30px;
   }
 
   #aa-contact .aa-contact-area .aa-contact-top .aa-contact-top-left {
@@ -3128,7 +3128,7 @@ img {
   #aa-menu-area .main-navbar .navbar-header .aa-logo-img {
     height: 35px;
     margin-top: 5px;
-    width: 150px;
+    width: 30px;
   }
 
   #aa-properties .aa-properties-content .aa-properties-content-body .aa-list-view li .aa-properties-item .aa-properties-item-img {

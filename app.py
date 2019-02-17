@@ -2,15 +2,15 @@ from flask import Flask, json, request, jsonify, render_template
 from flaskext.mysql import MySQL
 
 app = Flask(__name__,
-            static_url_path='', 
+            static_url_path='',
             static_folder='',
             template_folder='')
 
 mysql = MySQL()
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '48650Pizz!'
-app.config['MYSQL_DATABASE_DB'] = 'duckhacks'
+app.config['MYSQL_DATABASE_PASSWORD'] = ''
+app.config['MYSQL_DATABASE_DB'] = 'duckhacks2019'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql.init_app(app)
@@ -51,24 +51,34 @@ def post_pitch():
     args = request.form
 
     # guaranteed to exist
-    name = "'" + args.get('name') +"'"
-    desc = "'" + args.get('desc') + "'"
-    dept = "'" + args.get('dept') + "'"
+    name = "'" + args.get('name', '') +"'"
+    desc = "'" + args.get('desc', '') + "'"
+    dept = "'" + args.get('dept', '') + "'"
 
     # might not exist
     cost = "'" + args.get('cost', '') + "'"
     value = "'" + args.get('value', '') + "'"
     votes = 0;
 
-    sql_string = 'INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) VALUES ({}, {}, {}, {}, {}, {})'.format(name, desc, dept, cost, value, votes)
+    '''
+    cur = mysql.get_db().cursor()
+    insert_stmt = (
+      "INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) "
+      "VALUES (%s, %s, %s, %s, %s, %s)"
+    )
 
+    data = (name, desc, dept, cost, value, votes)
+    cur.execute(insert_stmt, data)
+    '''
+
+    sql_string = 'INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) VALUES ({}, {}, {}, {}, {}, {})'.format(name, desc, dept, cost, value, votes)
+    print(sql_string)
     cur = mysql.get_db().cursor()
     cur.execute(sql_string)
-    
     mysql.get_db().commit()
 
-    print('end post')
-    return 'hi'
+    return "hi"
+
 
 
 

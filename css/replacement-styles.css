@@ -1,6 +1,16 @@
 body{
     background-color: lightblue;
 }
+button{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #59abe3;
+    color:#fff;
+    border-color: #59abe3;
+    box-shadow: none;
+    border-style: none;
+    border-radius: 0%;
+}
 .project-display{
     padding: 5px;
     margin-top:0px;

@@ -10,7 +10,7 @@ xmlhttp.onreadystatechange = function() {
         var desc = element.desc;
         var votes = element.votes;
         var pitchid = element.id;
-        stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
+        stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='pitches?id=" + pitchid + "'>"
                   + proj
                   + "</a></h3><p>"
                   + desc
@@ -40,7 +40,7 @@ document.getElementById("trending").onclick = function() {
           var desc = element.desc;
           var votes = element.votes;
           var pitchid = element.id;
-          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
+          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='pitches?id=" + pitchid + "'>"
           + proj
           + "</a></h3><p>"
           + desc
@@ -70,7 +70,7 @@ document.getElementById("recent").onclick = function() {
           var desc = element.desc;
           var votes = element.votes;
           var pitchid = element.id;
-          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
+          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='pitches?id=" + pitchid + "'>"
           + proj
           + "</a></h3><p>"
           + desc

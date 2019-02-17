@@ -9,8 +9,8 @@ app = Flask(__name__,
 mysql = MySQL()
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '48650Pizz!'
-app.config['MYSQL_DATABASE_DB'] = 'duckhacks'
+app.config['MYSQL_DATABASE_PASSWORD'] = ''
+app.config['MYSQL_DATABASE_DB'] = 'duckhacks2019'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql.init_app(app)
@@ -109,7 +109,13 @@ def post_pitch():
     return "hi"
 
 
+@app.route('/pitches', methods=['GET'])
+def pitches():
+    pitch_id = request.args['id']
+    sql_string = 'SELECT `name`, `desc`, `dept`, `cost`, `value`, `votes` FROM pitches WHERE `id`={}'.format(pitch_id)
+    d = json.loads(to_json(sql_string))[0]
 
+    return render_template('project-view.html', name=d['name'], desc = d['desc'], dept = d['dept'], cost = d['cost'], value = d['value'], votes = d['votes'])
 
 @app.route('/')
 def index():

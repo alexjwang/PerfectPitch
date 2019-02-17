@@ -30,9 +30,20 @@ def to_json(command):
 # get multiple pitch IDs
 @app.route('/get/getIDs/', methods=['GET'])
 def get_ids():
-    which = request.args['which']
-    if which == 'all':
-        sql_string = 'SELECT id, name, votes, dept FROM pitches'
+
+    which = request.args.get('which', '')
+    dept = request.args.get('dept', '')
+
+    sql_string = 'SELECT id, name, votes, dept FROM pitches '
+
+    if dept != '':
+        sql_string += "WHERE dept = '"  + dept + "' "
+
+    if which == 'recent':
+        sql_string += 'ORDER BY id DESC '
+    elif which == 'top':
+        sql_string += 'ORDER BY votes DESC '
+
     return to_json(sql_string)
 
 
@@ -72,7 +83,6 @@ def post_pitch():
     '''
 
     sql_string = 'INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) VALUES ({}, {}, {}, {}, {}, {})'.format(name, desc, dept, cost, value, votes)
-    print(sql_string)
     cur = mysql.get_db().cursor()
     cur.execute(sql_string)
     mysql.get_db().commit()

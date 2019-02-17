@@ -1,6 +1,3 @@
-body{
-    background-color: lightblue;
-}
 
 button{
     padding-top:10px;
@@ -35,6 +32,7 @@ button{
 .container-left{
     float:left;
     width: 85%;
+    margin-left: 25px;
 }
 
 .project-display h3 a{
@@ -55,7 +53,7 @@ button{
 
 #project-title h2{
     padding-top:25px;
-    color: #59abe3;
+    color: black;
 }
 #attributes{
     background-color:#59abe3;
@@ -107,5 +105,16 @@ h2 {
     text-align: center;
 }
 
+#pitchesbox {
+    width: 60%;
+    background-color:white;
+    box-shadow: 0 1px 2px #c9cccd;
+}
 
+#bottomrow {
+    margin-top: 20px;
+}
 
+#desctitle {
+    text-align: left;
+}

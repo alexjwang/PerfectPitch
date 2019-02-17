@@ -41,28 +41,31 @@
                   </div>
                 </div>
               </nav>
-    <div class="container">
+
+    <div class="container" id='pitchesbox'>
         <div class ="row">
             <div class="col-lg-12 col-md-12" id="project-title">
-                <div class="aa-title" >
-                    <h2 style="width: 70%; margin-left: 15%; border-bottom: 3px solid #59abe3;">{{ name }}</h2>
+                <div class="aa-title" id='desctitle' >
+                    <h2 style="width: 85%; margin-left: 7.5%; border-bottom: 3px solid black;">{{ name }}</h2>
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-lg-2 col-md-2"></div>
-            <div class="col-lg-2 col-md-2" id="attributes">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" id="attributes">
                 <h3>Proposal Attributes</h3>
                 <div id="project-cost"><span>Cost:</span> ${{ cost }}</div>
                 <div id="project-department"><span>Department:</span> {{ dept }}</div>
                 <div id="project-value"><span>Value:</span> {{ value }}</div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-md-6" id='descrip'>
                 <div id="project-description">{{ desc }}</div>
             </div>
-            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-md-2"></div>
         </div>
-        <div class="row">
+
+        <div class="row" id='bottomrow'>
             <div class="col-lg-8 col-md-8"></div>
             <div class = "col-lg-4 col-md-4">
                 <button type="button"><a href="index.html" style="color: white;">Return to Homepage</a></button>

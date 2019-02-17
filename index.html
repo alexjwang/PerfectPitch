@@ -89,12 +89,14 @@
       </div>
     </section>
   </div>
-  <button id='trending'>
-      Sort by trending
-  </button>
-  <button id='recent'>
-      Sort by most recent
-  </button>
+  <div class="row" id="button-box">
+      <button id='trending' style="margin-left: 60%;">
+          Sort by trending
+      </button>
+      <button id='recent'>
+          Sort by most recent
+      </button>
+  </div>
   <div class="container">
     <div class="row" id= "content-box">
           <div class ="project-display">
@@ -103,10 +105,10 @@
               <p>Sample Description</p>
             </div>
             <div class = "container-right">
-              <h3> </h3>
+              <br>
               <span>yoo</span>
               <br>
-              <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST">upvote</button>
+              <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST" style="padding-top:2px; padding-bottom: 2px;margin-left:0px;">upvote</button>
             </div>
           </div>
     </div>

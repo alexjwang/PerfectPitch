@@ -8,9 +8,8 @@ xmlhttp.onreadystatechange = function() {
         var dept = element.dept;
         var votes = element.votes;
         var isrc = 'img/item/'+dept+'.jpg';
-        var stuff = "<div class='row'><div class='col-md-4'><article class='aa-properties-item'><a href='#' class='aa-properties-item-img'><img src="
-                  + isrc
-                  + "alt='img'></a><div class='aa-tag for-sale'> "
+        var stuff = "<div class='row'><div class='col-md-4'><article class='aa-properties-item'>"  
+                  + "<div class='aa-tag for-sale'> "
                   + votes 
                   +" </div><div class='aa-properties-item-content'><div class='aa-properties-info'><span>" 
                   + dept 

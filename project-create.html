@@ -50,74 +50,9 @@
     <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
   <!-- END SCROLL TOP BUTTON -->
 
-  <!-- Start header section -->
-  <header id="aa-header">  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-header-area">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-left">
-                  
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- End header section -->
-
-  <!-- Start menu section -->
-  <div class="header" id="myHeader">
-    <h2>Perfect Pitch  </h2> 
-      <div class="aa-header-right">
-                  <a href="register.html" class="aa-register">Settings</a>
-                  <a href="signin.html" class="aa-login">Account Details</a>
-        </div>
-        <div class="aa-email hidden-xs">
-                    <span class="fa fa-envelope-o"></span> Info.PerfectPitch@gmail.com
-        </div>
-  </div>
-      <script>
-      // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-      </script>
-  <!-- End menu section -->
-
-  <!-- Start slider  -->
-    <div class="container-fluid" style="width:100%; padding: 0px; margin:0px;"> 
-      <!-- Top slider -->
-        <!-- Top slider single slide -->
-        <div class="aa-top-slider-single">
-          <img src="img/Header.png" alt="img" style="width:100%; height:auto;">
-        </div>
-      <!-- </div> -->
-    </div>
-  <!-- End slider  -->
-
   <!--Input Project Form-->
     <div class="container">
+        <h1 style="padding=20px;">Create New Project</h1>
         <form action="http://localhost:5000/post/pitchInfo/" method="POST"> <!--JAN edit the action form to be your localhost-->
             <label for="name" id="top" class="required">Project Name*:</label>
             <input type = "text" name="name" id="name" class="form-control" required><br>

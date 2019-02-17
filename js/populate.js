@@ -14,9 +14,9 @@ xmlhttp.onreadystatechange = function() {
                   + proj
                   + "</a></h3><p>"
                   + desc
-                  + "</div> <div class = 'container-right'> <br> <span style='font-size:x-large;'> " 
+                  + "</div> <div class = 'container-right'> <br> <span style='font-size:x-large; color: gray'> " 
                   + votes 
-                  + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:lightgreen;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
+                  + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:orange;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
                   + pitchid
                   + ">+</button> </form></div> </div> </div>";
         
@@ -44,9 +44,9 @@ document.getElementById("trending").onclick = function() {
           + proj
           + "</a></h3><p>"
           + desc
-          + "</div> <div class = 'container-right'> <br> <span style='font-size:x-large;'> " 
+          + "</div> <div class = 'container-right'> <br> <span style='color: gray; font-size:x-large;'> " 
           + votes 
-          + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:lightgreen;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
+          + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:orange;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
           + pitchid
           + ">+</button> </form></div> </div> </div>";
       }; 
@@ -74,9 +74,9 @@ document.getElementById("recent").onclick = function() {
           + proj
           + "</a></h3><p>"
           + desc
-          + "</div> <div class = 'container-right'> <br> <span style='font-size:x-large;'> " 
+          + "</div> <div class = 'container-right'> <br> <span style='color:gray'> " 
           + votes 
-          + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:lightgreen;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
+          + "</span> <form style='display: inline' action='http://localhost:5000/post/addVoteFromID' method='POST'> <button style='color:black; background-color:orange;margin-top: 0px; padding-top:2px; padding-bottom: 2px;' type='submit' name='id' value="
           + pitchid
           + ">+</button> </form></div> </div> </div>";
       }; 

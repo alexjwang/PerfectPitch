@@ -306,7 +306,29 @@ img {
   text-decoration: none;
   outline: none;
 }
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
 /*Preloader*/
 #aa-preloader-area {
   background-color: #F8F8F8;
@@ -3429,10 +3451,13 @@ img {
 
   #aa-header .aa-header-area .aa-header-right .aa-register {
     font-size: 14px;
+    margin-right=0px;
+   font color: white;
   }
 
   #aa-header .aa-header-area .aa-header-right .aa-login {
     font-size: 14px;
+    font color: white;
   }
 
   #aa-properties .aa-properties-content .aa-properties-content-head {

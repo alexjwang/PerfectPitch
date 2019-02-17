@@ -88,7 +88,7 @@ def post_pitch():
     # might not exist
     cost = "'" + args.get('cost', '') + "'"
     value = "'" + args.get('value', '') + "'"
-    votes = 0;
+    votes = 0
 
     '''
     cur = mysql.get_db().cursor()

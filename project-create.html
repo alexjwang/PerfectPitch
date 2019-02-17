@@ -50,74 +50,9 @@
     <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
   <!-- END SCROLL TOP BUTTON -->
 
-  <!-- Start header section -->
-  <header id="aa-header">  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-header-area">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-left">
-                  <div class="aa-email hidden-xs">
-                    <span class="fa fa-envelope-o"></span> Info.PerfectPitch@gmail.com
-                  </div>
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-right">
-                  <a href="register.html" class="aa-register">Settings</a>
-                  <a href="signin.html" class="aa-login">Account Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- End header section -->
-
-  <!-- Start menu section -->
-  <section id="aa-menu-area">
-    <nav class="navbar navbar-default main-navbar" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->                                               
-          <!-- Text based logo -->
-           <a class="navbar-brand aa-logo" href="index.html"> Perfect <span>Pitch</span></a>
-           <!-- Image based logo -->
-           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="index.html">Company HOME</a></li>                          
-        </div><!--/.nav-collapse -->       
-      </div>          
-    </nav> 
-  </section>
-  <!-- End menu section -->
-
-  <!-- Start slider  -->
-    <div class="container-fluid" style="width:100%; padding: 0px; margin:0px;"> 
-      <!-- Top slider -->
-        <!-- Top slider single slide -->
-        <div class="aa-top-slider-single">
-          <img src="img/Header.png" alt="img" style="width:100%; height:auto;">
-        </div>
-      <!-- </div> -->
-    </div>
-  <!-- End slider  -->
-
   <!--Input Project Form-->
     <div class="container">
+        <h1 style="padding=20px;">Create New Project</h1>
         <form action="http://localhost:5000/post/pitchInfo/" method="POST"> <!--JAN edit the action form to be your localhost-->
             <label for="name" id="top" class="required">Project Name*:</label>
             <input type = "text" name="name" id="name" class="form-control" required><br>

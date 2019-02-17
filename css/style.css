@@ -38,7 +38,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   color: #333333;
   font-size: 15px;
   overflow-x: hidden;
@@ -67,7 +67,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
 }
 
 
@@ -215,7 +215,7 @@ img {
 #aa-menu-area .main-navbar .navbar-header .aa-logo {
   border: 2px solid #fff;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   font-size: 80px;
   padding: 15px;
   line-height: 13px;
@@ -504,7 +504,7 @@ img {
   right: 20px;
 }
 #aa-slider .aa-slider-area .aa-top-slider .slick-prev::before, #aa-slider .aa-slider-area .aa-top-slider .slick-next::before {
-  font-family: "fontAwesome";
+  font-family: "Open Sans";
   font-size: 50px;
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single {
@@ -524,7 +524,7 @@ img {
   z-index: 999;
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-catg {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -547,7 +547,7 @@ img {
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-off {
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   color: #555;
   display: inline-block;
   margin-top: 10px;
@@ -555,7 +555,7 @@ img {
 }
 
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-price {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -647,7 +647,7 @@ img {
 }
 #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search span {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   margin: 0 10px;
 }
 #aa-advance-search .aa-advance-search-area .aa-advance-search-bottom .aa-single-filter-search .noUi-connect {
@@ -1166,7 +1166,7 @@ img {
 }
 #aa-client-testimonial .aa-client-testimonial-area .aa-testimonial-content .aa-testimonial-slider li .aa-testimonial-single .aa-testimonial-info p:before {
   content: '\f10e';
-  font-family: fontAwesome;
+  font-family: "Open Sans";
   font-size: 50px;
   left: 1%;
   position: absolute;
@@ -1563,7 +1563,7 @@ img {
 }
 #aa-properties .aa-properties-sidebar .aa-properties-single-sidebar .aa-single-filter-search span {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans";
   margin: 0 5px;
 }
 #aa-properties .aa-properties-sidebar .aa-properties-single-sidebar .aa-single-filter-search .noUi-connect {
@@ -1682,7 +1682,7 @@ img {
 }
 .aa-properties-details .aa-properties-info ul li:before {
   content: '\f046';
-  font-family: fontAwesome;
+  font-family: "Open Sans";
   left: 0;
   top: 0;
   margin-right: 10px;

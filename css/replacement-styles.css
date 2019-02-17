@@ -37,14 +37,14 @@ button{
 }
 
 .project-display h3 a{
-    font-family: sans-serif;
+    font-family: "Open Sans";
     color: #59abe3;
 }
 .project-display h3 a:hover{
     text-decoration: underline;
 }
 .project-display p{
-    font-family: sans-serif;
+    font-family: "Open Sans";
     color: slategray;
 }
 .project-display span{

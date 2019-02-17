@@ -1,8 +1,7 @@
 .project-display{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -12,7 +11,6 @@
 }
 .project-display p{
     font-family: sans-serif;
-    line-height: 10px;   
     color: slategray;
 }
 .project-display span{

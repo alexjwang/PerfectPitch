@@ -2,15 +2,19 @@ from flask import Flask, json, request, jsonify, render_template
 from flaskext.mysql import MySQL
 
 app = Flask(__name__,
+<<<<<<< HEAD:app.py
             static_url_path='',
+=======
+            static_url_path='', 
+>>>>>>> 508a81df94aa867d26ddeda6a7e69a9fa4d93291:app.py
             static_folder='',
             template_folder='')
 
 mysql = MySQL()
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = ''
-app.config['MYSQL_DATABASE_DB'] = 'duckhacks2019'
+app.config['MYSQL_DATABASE_PASSWORD'] = '48650Pizz!'
+app.config['MYSQL_DATABASE_DB'] = 'duckhacks'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql.init_app(app)

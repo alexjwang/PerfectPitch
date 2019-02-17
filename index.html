@@ -3,8 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Perfect Pitch | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <div class="header" id="myHeader">
+      <h2>Perfect Pitch</h2>
+   </div>
+      <script>
+                      // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+
+                // Get the header
+                var header = document.getElementById("myHeader");
+
+                // Get the offset position of the navbar
+                var sticky = header.offsetTop;
+
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+      </script>
+    
   
     <!-- Font awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">

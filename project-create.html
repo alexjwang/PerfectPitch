@@ -72,13 +72,13 @@
            <div class="col-lg-8 col-md-8">
                 <h1>Create New Pitch</h1>
                 <form action="http://localhost:5000/post/pitchInfo/" method="POST"> <!--JAN edit the action form to be your localhost-->
-                    <label for="name" id="top" class="required">Pitch Name*:</label>
+                    <label for="name" id="top" >Pitch Name:<span style='color: red'>*</span></label>
                     <input type = "text" name="name" id="name" class="form-control" required><br>
                     <div class="form-group">
-                        <label for="desc" class="required">Pitch Description:*</label>
+                        <label for="desc" >Pitch Description:<span style='color: red'>*</span></label>
                         <textarea class="form-control" name="desc" id="desc" rows="8" placeholder="Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them"></textarea>
                     </div>
-                    <label for="dept" class="required">Department*:</label><br>
+                    <label for="dept" >Department:<span style='color: red'>*</span></label><br>
                     <select name="dept" id="dept" size="5" class="form-control" required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
                         <option value="marketing">Accounting</option>
                         <option value="marketing">Customer Services</option>

@@ -67,11 +67,19 @@
     <section id="aa-latest-property">
     <div class="container">
       <div class="aa-latest-property-area" >
+
         <div class="aa-title">
           <h2>Projects Repository</h2>
           <span></span>
           <p>Search through projects proposed by coworkers in your company!</p>         
         </div>
+
+        <button id='trending'>
+          Sort by trending
+        </button>
+        <button id='recent'>
+            Sort by most recent
+        </button>
 
         <div class="row" id= "content-box">
             <div class = "col-md-12">
@@ -85,7 +93,9 @@
                   <h3> </h3>
                   <span>yoo</span>
                   <br>
-                  <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST">upvote</button>
+                  <form action="http://localhost:5000/post/addVoteFromID" method="POST">
+                    <input type="submit" name="id" value=10 />
+                  </form>
                </div>
 
               </div>

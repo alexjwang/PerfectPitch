@@ -6,18 +6,17 @@ xmlhttp.onreadystatechange = function() {
     var stuff = ""
     for(i = 0; i < myArr.length; i++) {
         var element = myArr[i];
-        var id = element.id;
         var proj = element.name;
-        var dept = element.dept;
+        var desc = element.desc;
         var votes = element.votes;
         var pitchid = element.id;
-        stuff += "<div class = 'col-md-12'> <div class= 'project-display'> <div class = 'col-md-8'> <h3>"
+        stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
                   + proj
-                  + "</h3> <p>"
-                  + dept
-                  + "</p> </div> <div class = 'col-md-4'> <h3> </h3> <span>Upvotes: " 
+                  + "</a></h3><p>"
+                  + desc
+                  + "</div> <div class = 'container-right'> <h3> </h3> <span>Upvotes: " 
                   + votes 
-                  + "<form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
+                  + "</span> <br> <form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
                   + pitchid
                   + "> upvote </button> </form></div> </div> </div>";
         
@@ -37,20 +36,19 @@ document.getElementById("trending").onclick = function() {
       var stuff = ""
       for(i = 0; i < myArr.length; i++) {
           var element = myArr[i];
-          var id = element.id;
           var proj = element.name;
-          var dept = element.dept;
+          var desc = element.desc;
           var votes = element.votes;
           var pitchid = element.id;
-          stuff += "<div class = 'col-md-12'> <div class= 'project-display'> <div class = 'col-md-8'> <h3>"
-                    + proj
-                    + "</h3> <p>"
-                    + dept
-                    + "</p> </div> <div class = 'col-md-4'> <h3> </h3> <span>Upvotes: " 
-                    + votes 
-                    + "<form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
-                    + pitchid
-                    + "> upvote </button> </form></div> </div> </div>"; 
+          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
+          + proj
+          + "</a></h3><p>"
+          + desc
+          + "</div> <div class = 'container-right'> <h3> </h3> <span>Upvotes: " 
+          + votes 
+          + "</span> <br> <form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
+          + pitchid
+          + "> upvote </button> </form></div> </div> </div>";
       }; 
       document.getElementById("content-box").innerHTML = stuff;
     }
@@ -68,20 +66,19 @@ document.getElementById("recent").onclick = function() {
       var stuff = ""
       for(i = 0; i < myArr.length; i++) {
           var element = myArr[i];
-          var id = element.id;
           var proj = element.name;
-          var dept = element.dept;
+          var desc = element.desc;
           var votes = element.votes;
           var pitchid = element.id;
-          stuff += "<div class = 'col-md-12'> <div class= 'project-display'> <div class = 'col-md-8'> <h3>"
-                    + proj
-                    + "</h3> <p>"
-                    + dept
-                    + "</p> </div> <div class = 'col-md-4'> <h3> </h3> <span>Upvotes: " 
-                    + votes 
-                    + "<form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
-                    + pitchid
-                    + "> upvote </button> </form></div> </div> </div>"; 
+          stuff += "<div class ='project-display'> <div class = 'container-left'><h3><a href='project-view.html'>"
+          + proj
+          + "</a></h3><p>"
+          + desc
+          + "</div> <div class = 'container-right'> <h3> </h3> <span>Upvotes: " 
+          + votes 
+          + "</span> <br> <form action='http://localhost:5000/post/addVoteFromID' method='POST'> <button type='submit' name='id' value="
+          + pitchid
+          + "> upvote </button> </form></div> </div> </div>";
       }; 
       document.getElementById("content-box").innerHTML = stuff;
     }

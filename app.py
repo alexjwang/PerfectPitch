@@ -34,7 +34,7 @@ def get_ids():
     which = request.args.get('which', '')
     dept = request.args.get('dept', '')
 
-    sql_string = 'SELECT id, name, votes, dept FROM pitches '
+    sql_string = 'SELECT id, name, votes, dept, `desc` FROM pitches '
 
     if dept != '':
         sql_string += "WHERE dept = '"  + dept + "' "

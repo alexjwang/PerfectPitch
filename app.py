@@ -9,8 +9,8 @@ app = Flask(__name__,
 mysql = MySQL()
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = ''
-app.config['MYSQL_DATABASE_DB'] = 'duckhacks2019'
+app.config['MYSQL_DATABASE_PASSWORD'] = '48650Pizz!'
+app.config['MYSQL_DATABASE_DB'] = 'duckhacks'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 mysql.init_app(app)
@@ -106,7 +106,7 @@ def post_pitch():
     cur.execute(sql_string)
     mysql.get_db().commit()
 
-    return "hi"
+    return redirect('project-confirmation.html')
 
 
 @app.route('/pitches', methods=['GET'])

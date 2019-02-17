@@ -25,9 +25,21 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="header" id="myHeader">
-        <h2>Perfect Pitch</h2>
-    </div>
+        <nav class="navbar navbar-inverse" style="border-radius: 0%">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                      <h2>Perfect Pitch</h2>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="project-create.html">CREATE PROJECT</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
     <div class="container">
         <div class ="row">
             <div class="col-lg-12 col-md-12" id="project-title">
@@ -49,9 +61,12 @@
             </div>
             <div class="col-lg-2 col-md-2"></div>
         </div>
-        <div class="row" id="button-box">
-            <button type="button"><a href="/" style="color: white;">Return to Homepage</a></button>
-            <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST">upvote</button>
+        <div class="row">
+            <div class="col-lg-8 col-md-8"></div>
+            <div class = "col-lg-4 col-md-4">
+                <button type="button"><a href="/" style="color: white;">Return to Homepage</a></button>
+                <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST">upvote</button>
+            </div>
         </div>
     </div>
   </body>

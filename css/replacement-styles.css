@@ -10,6 +10,7 @@ button{
     box-shadow: none;
     border-style: none;
     border-radius: 0%;
+    margin-left: 5px;
 }
 .project-display{
     padding: 5px;

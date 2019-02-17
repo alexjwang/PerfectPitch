@@ -119,14 +119,14 @@
   <!--Input Project Form-->
     <div class="container">
         <form action="http://localhost:5000/post/pitchInfo/" method="POST"> <!--JAN edit the action form to be your localhost-->
-            <label for="name" class="required">Project Name*:</label>
-            <input type = "text" name="name" id="name" required><br>
+            <label for="name" id="top" class="required">Project Name*:</label>
+            <input type = "text" name="name" id="name" class="form-control" required><br>
             <div class="form-group">
                 <label for="desc" class="required">Project Description:*</label>
                 <textarea class="form-control" name="desc" id="desc" rows="8" placeholder="Give an in-depth look into your initiative proposal. Make sure to discuss what problems this pitch addresses and how it will go about fixing them"></textarea>
             </div>
             <label for="dept" class="required">Department*:</label><br>
-            <select name="dept" id="dept" size="5" required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
+            <select name="dept" id="dept" size="5" class="form-control" required> <!--TODO: if we have time, we can get fancy and have companies specialize which departments appear in the dropdown-->
                 <option value="marketing">Accounting</option>
                 <option value="marketing">Customer Services</option>
                 <option value="marketing">Design</option>
@@ -138,15 +138,14 @@
             <!--<label for="dept-cust">Custom Category:</label>
             <input type ="text" name="dept-cust"><br> -->
             <label for="cost">Expected Cost:</label>
-            <input type="number" id="cost" name="cost" ><br>
-            <label for="timeline">Expected Timeline:</label>
+            <input type="number" id="cost" name="cost" class="form-control"><br>
             <label for="value">Value Added:</label>
             <textarea class="form-control" name="value" id="value" placeholder="Include a few brief sentences quantifying how this project will add value to your company" rows="3"></textarea><br>
             <!--<label for="headPicture">Include Photo:</label>
             <input type="file" class="file-input" name = "headPicture" accept="image/*">
             <label for="data">Relevant Data Visualization:</label>
             <input type="file" class="file-input" name = "data" accept="image/*">-->
-            <br><input type="submit" id="submit" class="submit">
+            <br><input type="submit" id="submit" class="submit" class="form-control">
         </form>
         <br>
         <p>When you submit this project, it will go public for all users to view and vote on.</p>

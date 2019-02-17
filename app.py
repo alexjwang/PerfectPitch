@@ -1,7 +1,10 @@
-from flask import Flask, json, request, jsonify
+from flask import Flask, json, request, jsonify, render_template
 from flaskext.mysql import MySQL
 
-app = Flask(__name__)
+app = Flask(__name__,
+            static_url_path='',
+            static_folder='',
+            template_folder='')
 
 mysql = MySQL()
 # MySQL configurations
@@ -48,9 +51,9 @@ def post_pitch():
     args = request.form
 
     # guaranteed to exist
-    name = "'" + args.get('name') +"'"
-    desc = "'" + args.get('desc') + "'"
-    dept = "'" + args.get('dept') + "'"
+    name = "'" + args.get('name', '') +"'"
+    desc = "'" + args.get('desc', '') + "'"
+    dept = "'" + args.get('dept', '') + "'"
 
     # might not exist
     cost = "'" + args.get('cost', '') + "'"
@@ -68,7 +71,7 @@ def post_pitch():
 
 @app.route('/')
 def index():
-    return get_info()
+    return render_template('index.html')
 
 
 if __name__ == "__main__":

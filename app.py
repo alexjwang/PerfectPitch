@@ -60,12 +60,25 @@ def post_pitch():
     value = "'" + args.get('value', '') + "'"
     votes = 0;
 
-    sql_string = 'INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) VALUES ({}, {}, {}, {}, {}, {})'.format(name, desc, dept, cost, value, votes)
+    '''
+    cur = mysql.get_db().cursor()
+    insert_stmt = (
+      "INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) "
+      "VALUES (%s, %s, %s, %s, %s, %s)"
+    )
 
+    data = (name, desc, dept, cost, value, votes)
+    cur.execute(insert_stmt, data)
+    '''
+
+    sql_string = 'INSERT INTO pitches (`name`, `desc`, `dept`, `cost`, `value`, `votes`) VALUES ({}, {}, {}, {}, {}, {})'.format(name, desc, dept, cost, value, votes)
+    print(sql_string)
     cur = mysql.get_db().cursor()
     cur.execute(sql_string)
+    mysql.get_db().commit()
 
-    print('end post')
+    return "hi"
+
 
 
 

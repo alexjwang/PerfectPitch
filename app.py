@@ -1,4 +1,4 @@
-from flask import Flask, json, request, jsonify, render_template
+from flask import Flask, json, request, jsonify, render_template, redirect, url_for
 from flaskext.mysql import MySQL
 
 app = Flask(__name__,
@@ -71,7 +71,7 @@ def add_vote():
     cur.execute(sql_string_update)
     mysql.get_db().commit()
 
-    return 'done'
+    return redirect(url_for('index'))
 
 
 # puts a new pitch into the database from post

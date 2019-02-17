@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <div class="header" id="myHeader">
-      <h2>Perfect Pitch</h2>
-   </div>
+    
       <script>
                       // When the user scrolls the page, execute myFunction 
                 window.onscroll = function() {myFunction()};
@@ -61,82 +59,10 @@
 
   </head>
   <body class="aa-price-range" background="silver.png">  
-  <!-- Pre Loader -->
-  <!-- <div id="aa-preloader-area">
-    <div class="pulse"></div>
-  </div> -->
 
-  <!-- SCROLL TOP BUTTON -->
-   <!-- <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a> -->
-  <!-- END SCROLL TOP BUTTON -->
-
-  <!-- Start header section -->
-  <!-- <header id="aa-header">  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-header-area">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-left">
-                  <div class="aa-email hidden-xs">
-                    <span class="fa fa-envelope-o"></span> Info.PerfectPitch@gmail.com
-                  </div>
-                </div>              
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-right">
-                  <a href="register.html" class="aa-register"></a>
-                  <a href="signin.html" class="aa-login">Welcome, Katherine!</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header> -->
-  <!-- End header section -->
-
-  <!-- Start menu section -->
-  <!-- <section id="aa-menu-area" background="silver.png">
-    <nav class="navbar navbar-default main-navbar" role="navigation">  
-      <div class="container">
-        <div class="navbar-header"> -->
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
-          <!-- LOGO -->                                               
-          <!-- Text based logo -->
-          <!-- <a class="navbar-brand aa-logo" href="index.html"> Perfect <span>Pitch</span></a> -->
-           <!-- Image based logo -->
-           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
-        <!--</div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="index.html">HOME</a></li>
-             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Filter Projects By:<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">                
-                <li><a href="index.html">Most Upvoted All Time</a></li> 
-                <li><a href="index.html">Most Recent</a></li>
-              </ul>
-            </li>                                       
-            <li>
-                <a href="project-create.html">Create A Project!</a>
-              </li>
-          </ul>                            
-        </div><!--/.nav-collapse -->       
-      <!--</div>          
-    </nav> 
-  </section> -->
-  <!-- End menu section -->
-    
+  <div class="header" id="myHeader">
+    <h2>Perfect Pitch</h2>
+  </div>
 
     <section id="aa-latest-property">
     <div class="container">
@@ -149,10 +75,18 @@
 
         <div class="row" id= "content-box">
             <div class = "col-md-12">
-              <div class= "project-display">
-                <h3><a href="project-view.html">Testing</a></h3>
-                <p>Sample Description</p>
-                <span>yoo</span>
+              <div class = "project-display">
+                <div class = "col-md-8">
+                  <h3><a href="project-view.html">Testing</a></h3>
+                  <p>Sample Description</p>
+                </div>
+
+                <div class = "col-md-4">
+                  <h3> </h3>
+                  <span>yoo</span>
+                  <br>
+                  <button type="button" action="http://localhost:5000/get/addVoteFromID" method="POST">upvote</button>
+               </div>
               </div>
             </div>
         </div>

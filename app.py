@@ -51,8 +51,27 @@ def get_ids():
 @app.route('/get/pitchFromID', methods=['GET'])
 def get_pitch():
     pitch_id = request.args['id']
-    sql_string = 'SELECT * FROM pitches WHERE `id`=' + pitch_id
+    sql_string = 'SELECT * FROM pitches WHERE `id`={}'.format(pitch_id)
     return to_json(sql_string)
+
+
+# increment vote counter from ID
+@app.route('/post/addVoteFromID', methods=['POST'])
+def add_vote():
+
+    pitch_id = request.form['id']
+
+    sql_string_select = 'SELECT votes FROM pitches WHERE `id`={}'.format(pitch_id)
+    selected = json.loads(to_json(sql_string_select))
+    new_num_votes = int(selected[0]['votes']) + 1
+
+    sql_string_update = 'UPDATE pitches SET `votes`={} WHERE `id`={} '.format(new_num_votes, pitch_id)
+
+    cur = mysql.get_db().cursor()  # cursor
+    cur.execute(sql_string_update)
+    mysql.get_db().commit()
+
+    return 'done'
 
 
 # puts a new pitch into the database from post
@@ -69,7 +88,7 @@ def post_pitch():
     # might not exist
     cost = "'" + args.get('cost', '') + "'"
     value = "'" + args.get('value', '') + "'"
-    votes = 0;
+    votes = 0
 
     '''
     cur = mysql.get_db().cursor()

@@ -121,13 +121,16 @@ h2 {
 }
 
 #aa-footer .aa-footer-area .aa-footer-left p a:hover, #aa-footer .aa-footer-area .aa-footer-left p a:focus {
+  padding-top: 5px;
   color: #59abe3;
 }
 #aa-footer .aa-footer-area .aa-footer-middle a:hover, #aa-footer .aa-footer-area .aa-footer-middle a:focus {
+  padding-top: 5px;
   color: #59abe3;
   border-color: #59abe3;
 }
 #aa-footer .aa-footer-area .aa-footer-right a:hover, #aa-footer .aa-footer-area .aa-footer-right a:focus {
+  padding-top: 5px;
   color: #59abe3;
 }
 

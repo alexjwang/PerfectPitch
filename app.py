@@ -56,10 +56,10 @@ def get_pitch():
 
 
 # increment vote counter from ID
-@app.route('/get/addVoteFromID', methods=['GET'])
+@app.route('/post/addVoteFromID', methods=['POST'])
 def add_vote():
 
-    pitch_id = request.args['id']
+    pitch_id = request.form['id']
 
     sql_string_select = 'SELECT votes FROM pitches WHERE `id`={}'.format(pitch_id)
     selected = json.loads(to_json(sql_string_select))

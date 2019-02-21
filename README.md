@@ -13,3 +13,6 @@ Supervisors will be greeted with a filtered list of initiatives that are most fa
 # Created By
 Michael Jan, Kate Majidzadeh, Anthony Pitts, and Alexander Wang
 for DuckHacks 2019 at Stevens Institute of Technology
+
+# Awards
+This project recieved the "Best Non-Stevens" Award, marking it as the best submission from a group not from SIT.
